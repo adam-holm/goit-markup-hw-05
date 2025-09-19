@@ -553,6 +553,9 @@ body {
   fill: #fff;
   margin-left: 16px;
 }
+.footer-button svg {
+  margin-left: 16px;
+}
 /* Базові стилі */
 ul,
 ol {
