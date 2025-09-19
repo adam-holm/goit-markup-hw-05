@@ -747,7 +747,7 @@ a {
   color: #4d5ae5;
 }
 .modal-check-box {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 16px;
@@ -800,4 +800,10 @@ a {
   opacity: 0;
   width: 0;
   height: 0;
+}
+.modal-check-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
 }
