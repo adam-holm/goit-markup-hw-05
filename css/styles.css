@@ -624,15 +624,26 @@ img {
 }
 .modal-close-button {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 24px;
   right: 24px;
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   background: transparent;
+  background-color: #e7e9fc;
   border-radius: 50%;
-  fill: none;
-  stroke-width: 1px;
-  stroke: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close-button:hover,
+.modal-close-button:focus {
+  background-color: #404bbf;
+  border: none;
 }
 .modal-title {
   text-align: center;
@@ -656,7 +667,7 @@ img {
   padding-left: 38px;
   padding-right: 16px;
   outline: transparent;
-  transition: 0.3s border-color linear;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:focus {
   border-color: #4d5ae5;
@@ -665,9 +676,10 @@ img {
   fill: #404bbf;
 }
 .modal-label {
+  display: block;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 
@@ -685,7 +697,7 @@ img {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  transition: 0.3s border-color linear;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-textarea {
   width: 100%;
