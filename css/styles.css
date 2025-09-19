@@ -530,7 +530,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
   padding: 8px 24px;
   min-width: 165px;
   border: none;
@@ -552,6 +551,7 @@ body {
 
 .footer-button-icon {
   fill: #fff;
+  margin-left: 16px;
 }
 /* Базові стилі */
 ul,
