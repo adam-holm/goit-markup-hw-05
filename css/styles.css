@@ -743,6 +743,7 @@ img {
 .modal-check:checked + .modal-check-label > .modal-check-box {
   background-color: #404bbf;
   border: none;
+  fill: #f4f4fd;
 }
 a {
   line-height: 1.33333;
@@ -810,4 +811,14 @@ a {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+}
+.modal-check-link {
+  line-height: 1.33333;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
+.modal-check-link:hover,
+.modal-check-link:focus {
+  color: #404bbf;
 }
